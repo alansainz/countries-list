@@ -1,0 +1,40 @@
+@import './shared/styles/global.scss';
+
+body {
+  margin: 0;
+  font-family: 'NunitoSans';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+b {
+  font-weight: 600;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@font-face {
+  font-family: 'NunitoSans';
+  font-weight: 300;
+  src: url(./fonts/NunitoSans_10pt-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NunitoSans';
+  font-weight: 600;
+  src: url(./fonts/NunitoSans_10pt-SemiBold.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'NunitoSans';
+  font-weight: 800;
+  src: url(./fonts/NunitoSans_10pt-ExtraBold.ttf) format('opentype');
+}

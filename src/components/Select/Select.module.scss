@@ -1,0 +1,68 @@
+@import ',,/../../../shared/styles/global.scss';
+
+.select {
+  background-color: $colour-dark-blue;
+  border: 0.0625rem solid $colour-dark-blue;
+  border-radius: $card-border-radius;
+  position: relative;
+  font-size: $fontsize-copy-homepage;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  padding-right: 1rem;
+
+  &.lightTheme {
+    background: $colour-white;
+    box-shadow: $box-shadow-light-theme;
+    border: 0.0625rem solid $colour-white;
+    color: $colour-very-dark-blue;
+  }
+
+  .option {
+    padding-left: 1rem;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .optionsWrapper {
+    display: none;
+    width: inherit;
+    background-color: inherit;
+    position: absolute;
+    top: 3.5rem;
+    border: 0.0625rem solid $colour-dark-blue;
+    border-radius: $card-border-radius;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    &.lightTheme {
+      background: $colour-white;
+      box-shadow: $box-shadow-light-theme;
+      border: 0.0625rem solid $colour-white;
+      color: $colour-very-dark-blue;
+    }
+  }
+
+  .show {
+    display: block;
+  }
+}
+
+@include tabletAndMobile {
+  .select {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    width: 55%;
+
+    .optionsWrapper {
+      left: -1px;
+      width: 100%;
+      top: 4.2rem;
+    }
+  }
+}

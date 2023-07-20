@@ -1,0 +1,54 @@
+@import '../../../shared/styles/global.scss';
+
+.borderButton {
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  background-color: $colour-dark-blue;
+  color: $colour-white;
+  border-radius: $card-border-radius;
+  display: flex;
+  align-items: center;
+  box-shadow: $box-shadow;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &.lightTheme {
+    background: $colour-white;
+    box-shadow: $box-shadow-light-theme;
+    border: 0.0625rem solid $colour-white;
+    color: $colour-very-dark-blue;
+
+    &:hover {
+      border: 0.0625rem solid $colour-dark-blue;
+    }
+  }
+
+  &.borderLess {
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+
+    &:hover {
+      border: 0;
+    }
+  }
+
+  .text {
+    padding-left: 1rem;
+  }
+
+  .iconWrapper {
+    margin-left: -1rem;
+  }
+}
+
+@include tabletAndMobile {
+  .borderButton {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+  }
+}

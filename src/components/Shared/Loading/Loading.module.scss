@@ -1,0 +1,9 @@
+@import '../../../shared/styles/global.scss';
+
+.loading {
+  padding: $content-padding;
+
+  .innerContainer {
+    @include innerContainer();
+  }
+}

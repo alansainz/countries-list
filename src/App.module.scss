@@ -1,0 +1,11 @@
+@import './shared/styles/global.scss';
+
+.darkTheme {
+  background-color: $colour-very-dark-blue;
+  color: $colour-white;
+}
+
+.lightTheme {
+  background-color: $colour-very-light-gray;
+  color: $colour-very-dark-blue;
+}

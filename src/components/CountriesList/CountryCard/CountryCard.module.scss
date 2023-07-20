@@ -1,0 +1,37 @@
+@import '../../../shared/styles/global.scss';
+
+.countryCard {
+  width: $small-flag-width;
+  background-color: $colour-dark-blue;
+  border-radius: $card-border-radius;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  font-size: $fontsize-copy-homepage;
+
+  &.lightTheme {
+    background-color: $colour-white;
+    box-shadow: $box-shadow-light-theme;
+  }
+
+  .countryName {
+    font-size: $fontsize-copy-detail;
+    b {
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  .data {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  .flagWrapper {
+    width: 100%;
+    min-height: $small-flag-height;
+    height: $small-flag-height;
+
+    .flag {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

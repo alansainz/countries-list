@@ -1,0 +1,35 @@
+@import '../../shared/styles/global.scss';
+
+.home {
+  padding: $content-padding;
+
+  .innerContainer {
+    @include innerContainer();
+  }
+
+  .inputAndFilter {
+    display: flex;
+    margin-bottom: $content-padding;
+  }
+
+  .inputWrapper {
+    display: flex;
+    flex: 0.8;
+  }
+
+  .selectWrapper {
+    display: flex;
+    flex: 0.2;
+  }
+}
+
+@include tabletAndMobile {
+  .inputAndFilter {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .inputWrapper {
+    flex: 1;
+  }
+}

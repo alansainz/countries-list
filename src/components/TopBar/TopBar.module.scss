@@ -1,0 +1,35 @@
+@import '../../shared/styles/global.scss';
+
+.container {
+  padding: 1rem $content-padding 1rem $content-padding;
+  background-color: $colour-dark-blue;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &.lightTheme {
+    background-color: $colour-white;
+    box-shadow: $box-shadow-light-theme;
+    border: 0.0625rem solid $colour-white;
+    color: $colour-very-dark-blue;
+  }
+
+  .innerContainer {
+    @include innerContainer();
+  }
+
+  h1 {
+    font-weight: $font-weight-bold;
+    font-size: $fontsize-header;
+  }
+}
+
+@include tabletAndMobile {
+  .container {
+    h1 {
+      font-size: $fontsize-copy-detail;
+    }
+  }
+}

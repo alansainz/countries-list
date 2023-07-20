@@ -1,0 +1,16 @@
+@import '../../shared/styles/global.scss';
+
+.countriesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, $small-flag-width);
+  grid-gap: $list-gap;
+  justify-content: space-between;
+}
+
+@include tabletAndMobile {
+  .countriesList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

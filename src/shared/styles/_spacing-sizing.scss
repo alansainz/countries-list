@@ -1,0 +1,18 @@
+$content-padding: 2rem;
+$list-gap: calc($content-padding / 2);
+$small-flag-height: 125px;
+$small-flag-width: calc($small-flag-height * 2);
+$big-flag-height: 407px;
+$container: 1280px;
+$breakpoint-medium: 768px;
+
+@mixin innerContainer {
+  max-width: $container;
+  margin: 0 auto;
+}
+
+@mixin tabletAndMobile {
+  @media screen and (max-width: $breakpoint-medium) {
+    @content;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "population": "Population: ",
+  "region": "Region: ",
+  "capital": "Capital: ",
+  "inputLabel": "Country searcher: ",
+  "inputPlaceholder": "Search for a country...",
+  "filterByRegion": "Filter by Region",
+  "nativeName": "Native name: ",
+  "subRegion": "Sub Region: ",
+  "tld": "Top Level Domain: ",
+  "currencies": "Currencies: ",
+  "languages": "Languages: ",
+  "borderCountries": "Border Countries: ",
+  "back": "Back",
+  "whereInTheWorld": "Where in the world?",
+  "darkMode": "Dark mode",
+  "lightMode": "Light mode"
+}

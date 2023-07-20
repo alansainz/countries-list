@@ -1,0 +1,21 @@
+@import '../../shared/styles/global.scss';
+
+.wrapper {
+  padding: $content-padding;
+
+  .innerContainer {
+    @include innerContainer();
+  }
+
+  .goBackWrapper {
+    margin-bottom: 3rem;
+
+    .text {
+      padding-left: 1rem;
+    }
+
+    .iconWrapper {
+      margin-left: -1rem;
+    }
+  }
+}
